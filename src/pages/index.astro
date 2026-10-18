@@ -3,7 +3,20 @@ import { Image } from 'astro:assets';
 import logoUtom from '../assets/logo-utom-blanco.png';
 import studentHero from '../assets/estudiante-hero.png';
 import studentCta from '../assets/estudiante-utom.png';
-import TechLogo from '../components/TechLogo.astro';
+import htmlLogo from '../assets/html5.svg';
+import javascriptLogo from '../assets/javascript.svg';
+import tailwindLogo from '../assets/tailwindcss.svg';
+import pythonLogo from '../assets/python.svg';
+import javaLogo from '../assets/java.svg';
+import postgresqlLogo from '../assets/postgresql.svg';
+import mysqlLogo from '../assets/mysql-icon-dark.svg';
+import numpyLogo from '../assets/numpy-seeklogo.svg';
+import pandasLogo from '../assets/pandas-icon-seeklogo.svg';
+import gitLogo from '../assets/git.svg';
+import githubLogo from '../assets/github_dark.svg';
+import ciscoLogo from '../assets/cisco_dark.svg';
+import arduinoLogo from '../assets/arduino-seeklogo.svg';
+import raspberryPiLogo from '../assets/raspberry_pi.svg';
 import '../styles/global.css';
 import '../styles/poster.css';
 import '../styles/mascot.css';
@@ -77,7 +90,6 @@ const disciplines = [
       <div class="paper-strip" aria-label="La UTOM te prepara para el futuro"><span>APRENDE HACIENDO</span><b>✦</b><span>CREA SIN LÍMITES</span><b>✦</b><span>CONSTRUYE TU RUMBO</span></div>
 
       <section id="explora" class="explore section-shell">
-        <div class="section-tag"><span>01</span><i></i> explora tu potencial</div>
         <div class="split-heading"><h2>ELIGE TU<br /><em>ÁREA DE JUEGO.</em></h2><p>Tu perfil no tiene que caber en una sola caja. Aquí mezclas código, datos y conexión para crear soluciones que sí importan.</p></div>
         <div class="discipline-grid">
           {disciplines.map((item) => <article class={`discipline-card ${item.color}`}><div class="discipline-meta"><span>{item.index}</span><span>↗</span></div><div class="discipline-symbol">{item.symbol}</div><h3>{item.title}</h3><p>{item.copy}</p></article>)}
@@ -85,12 +97,13 @@ const disciplines = [
       </section>
 
       <section class="tech-lab section-shell">
-        <div class="tech-lab-copy"><div class="section-tag"><span>01.5</span><i></i> herramientas para crear</div><h2>DE LA IDEA<br />AL <em>PROYECTO.</em></h2><p>No se trata solo de aprender programas: usarás herramientas para diseñar, construir, conectar y compartir soluciones digitales.</p><div class="tech-project"><span>RETO DE INICIO</span><strong>Convierte una idea de tu comunidad en una solución digital.</strong></div></div>
-        <div class="tech-grid" aria-label="Tecnologías y áreas de aprendizaje"><article><b>&lt;/&gt;</b><span>WEB</span><p>HTML · CSS · JavaScript</p><div class="tech-logos"><TechLogo kind="html" /><TechLogo kind="css" /><TechLogo kind="js" /></div></article><article><b>PY</b><span>PROGRAMACIÓN</span><p>Python · lógica · IA</p><div class="tech-logos"><TechLogo kind="python" /></div></article><article><b>SQL</b><span>DATOS</span><p>Bases de datos · análisis</p><div class="tech-logos"><TechLogo kind="sql" /></div></article><article><b>GIT</b><span>COLABORACIÓN</span><p>Versiones · equipos</p><div class="tech-logos"><TechLogo kind="git" /></div></article><article><b>AI</b><span>INTELIGENCIA</span><p>Modelos · creatividad</p><div class="tech-logos"><TechLogo kind="ai" /><TechLogo kind="python" /></div></article><article><b>NET</b><span>CONEXIÓN</span><p>Redes · seguridad · IoT</p><div class="tech-logos"><TechLogo kind="cisco" /><TechLogo kind="cpp" /></div></article></div>
+        <h3 class="tech-grid-title">Herramientas para crear</h3>
+        <div class="tech-lab-copy"><h2>DE LA IDEA<br />AL <em>PROYECTO.</em></h2><p>No se trata solo de aprender programas: usarás herramientas para diseñar, construir, conectar y compartir soluciones digitales.</p><div class="tech-project"><span>RETO DE INICIO</span><strong>Convierte necesidades en soluciones reales.</strong></div></div>
+        <div class="tech-grid" aria-label="Tecnologías y áreas de aprendizaje"><article><b>&lt;/&gt;</b><span>WEB</span><p>HTML · CSS · JavaScript</p><div class="tech-logos"><img class="tech-logo tech-logo-image" src={htmlLogo.src} alt="HTML" width="32" height="32" loading="lazy" /><img class="tech-logo tech-logo-image" src={javascriptLogo.src} alt="JavaScript" width="32" height="32" loading="lazy" /><img class="tech-logo tech-logo-image" src={tailwindLogo.src} alt="Tailwind CSS" width="32" height="32" loading="lazy" /></div></article><article><b>PY</b><span>PROGRAMACIÓN</span><p>Python · lógica · IA</p><div class="tech-logos"><img class="tech-logo tech-logo-image" src={pythonLogo.src} alt="Python" width="32" height="32" loading="lazy" /><img class="tech-logo tech-logo-image" src={javaLogo.src} alt="Java" width="32" height="32" loading="lazy" /></div></article><article><b>SQL</b><span>DATOS</span><p>Bases de datos · análisis</p><div class="tech-logos"><img class="tech-logo tech-logo-image" src={postgresqlLogo.src} alt="PostgreSQL" width="32" height="32" loading="lazy" /><img class="tech-logo tech-logo-image tech-logo--mysql" src={mysqlLogo.src} alt="MySQL" width="32" height="32" loading="lazy" /></div></article><article><b>GIT</b><span>COLABORACIÓN</span><p>Versiones · equipos</p><div class="tech-logos tech-logos--git"><img class="tech-logo tech-logo-image" src={gitLogo.src} alt="Git" width="32" height="32" loading="lazy" /><img class="tech-logo tech-logo-image tech-logo--github" src={githubLogo.src} alt="GitHub" width="32" height="32" loading="lazy" /></div></article><article><b>AI</b><span>INTELIGENCIA</span><p>Modelos · creatividad</p><div class="tech-logos"><img class="tech-logo tech-logo-image" src={pythonLogo.src} alt="Python" width="32" height="32" loading="lazy" /><img class="tech-logo tech-logo-image" src={numpyLogo.src} alt="NumPy" width="32" height="32" loading="lazy" /><img class="tech-logo tech-logo-image" src={pandasLogo.src} alt="Pandas" width="32" height="32" loading="lazy" /></div></article><article><b>NET</b><span>CONEXIÓN</span><p>Redes · seguridad · IoT</p><div class="tech-logos"><img class="tech-logo tech-logo-image" src={arduinoLogo.src} alt="Arduino" width="32" height="32" loading="lazy" /><img class="tech-logo tech-logo-image" src={raspberryPiLogo.src} alt="Raspberry Pi" width="32" height="32" loading="lazy" /><img class="tech-logo tech-logo-image" src={ciscoLogo.src} alt="Cisco" width="32" height="32" loading="lazy" /></div></article></div>
       </section>
 
       <section id="mapa" class="map-section section-shell">
-        <div class="section-tag light-tag"><span>02</span><i></i> mapa de evolución</div>
+        <div class="section-tag light-tag">mapa de evolución</div>
         <div class="map-heading"><h2>Tu ruta,<br /><em>en movimiento.</em></h2><div><p>Diez cuatrimestres. Una progresión real: de tus primeros algoritmos hasta proyectos que pueden llegar a una empresa.</p><div class="map-legend"><span><i class="dot dot-base"></i>base</span><span><i class="dot dot-build"></i>construcción</span><span><i class="dot dot-real"></i>mundo real</span></div></div></div>
         <div class="semester-track">
           {semesters.map((semester) => <article class={`semester ${semester.stage}`}><div class="semester-head"><b>{semester.n}</b><span>{semester.title}</span></div><ul>{semester.subjects.map((subject) => <li>{subject}</li>)}</ul><span class="semester-corner">↗</span></article>)}
@@ -98,24 +111,12 @@ const disciplines = [
         <div class="track-footer"><span>sigue la ruta</span><i></i><span>10 etapas / 1 gran salto</span></div>
       </section>
 
-      <section class="proof section-shell"><div class="proof-copy"><div class="section-tag"><span>03</span><i></i> una formación diferente</div><h2>Aprende haciendo.<br /><em>Crece creando.</em></h2><p>La UTOM combina formación tecnológica, proyectos integradores, estadías y una comunidad que te impulsa a moverte.</p><a class="arrow-link" href="#contacto">Conoce la experiencia UTOM <span>↗</span></a></div><div class="proof-numbers"><div><strong>40</strong><span>% teoría</span></div><div class="number-highlight"><strong>60</strong><span>% práctica</span></div><div><strong>2</strong><span>títulos profesionales</span></div></div></section>
-
       <section id="participa" class="participa section-shell">
-        <div class="participa-intro"><div class="section-tag"><span>04</span><i></i> vive la experiencia</div><h2>No vienes solo<br />a <em>estudiar.</em></h2><p>En TI conviertes ideas en soluciones junto a otras personas: colaboras, presentas lo que construyes y aprendes de retos reales.</p></div>
+        <div class="participa-intro"><div class="section-tag">vive la experiencia</div><h2>No vienes solo<br />a <em>estudiar.</em></h2><p>En TI conviertes ideas en soluciones junto a otras personas: colaboras, presentas lo que construyes y aprendes de retos reales.</p></div>
         <div class="participa-grid">
           <article><span>01</span><h3>Colabora</h3><p>Forma equipos, comparte ideas y crea proyectos que tengan impacto.</p><b>↗</b></article>
           <article><span>02</span><h3>Construye</h3><p>Lleva tus conocimientos de clase a prototipos, apps y experiencias digitales.</p><b>↗</b></article>
           <article><span>03</span><h3>Presenta</h3><p>Haz visible tu talento con portafolios y proyectos integradores.</p><b>↗</b></article>
-        </div>
-      </section>
-
-      <section class="route-quiz section-shell" aria-labelledby="quiz-title">
-        <div class="quiz-copy"><div class="section-tag light-tag"><span>05</span><i></i> descubre tu enfoque</div><h2 id="quiz-title">¿QUÉ RUTA<br /><em>TE MUEVE?</em></h2><p>Tres decisiones rápidas. No es un examen: es una pista para reconocer lo que más te entusiasma de TI.</p></div>
-        <div class="quiz-panel">
-          <div class="quiz-question"><span>01 / 03</span><p>¿Qué te emociona más crear?</p><div class="quiz-options"><button type="button" data-route="codigo">Una app o sitio web</button><button type="button" data-route="datos">Una historia con datos</button><button type="button" data-route="conexion">Una red segura</button></div></div>
-          <div class="quiz-question"><span>02 / 03</span><p>En un equipo tú prefieres...</p><div class="quiz-options"><button type="button" data-route="codigo">Construir la experiencia</button><button type="button" data-route="datos">Encontrar patrones</button><button type="button" data-route="conexion">Hacer que todo funcione</button></div></div>
-          <div class="quiz-question"><span>03 / 03</span><p>¿Qué reto elegirías?</p><div class="quiz-options"><button type="button" data-route="codigo">Resolver con código</button><button type="button" data-route="datos">Predecir con información</button><button type="button" data-route="conexion">Proteger y conectar</button></div></div>
-          <p id="route-result" class="quiz-result" aria-live="polite">Elige una opción en cada pregunta para descubrir tu ruta.</p>
         </div>
       </section>
 
@@ -125,18 +126,6 @@ const disciplines = [
     <footer><Image class="footer-logo-image" style="width:190px;height:auto;display:block" src={logoUtom} alt="Universidad Tecnológica del Oriente de Michoacán" format="webp" /><span>Universidad Tecnológica del Oriente de Michoacán</span><span>servicios_escolares@utom.edu.mx · +52 447 150 8913</span></footer>
     <script>
       if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
-      const labels = { codigo: 'CÓDIGO — podrías disfrutar crear interfaces, apps y productos digitales.', datos: 'DATOS — podrías disfrutar descubrir patrones, usar IA y tomar decisiones con información.', conexion: 'CONEXIÓN — podrías disfrutar redes, ciberseguridad e IoT con propósito.' };
-      const result = document.querySelector('#route-result');
-      document.querySelectorAll('.quiz-options button').forEach((button) => button.addEventListener('click', () => {
-        const group = button.closest('.quiz-options');
-        group.querySelectorAll('button').forEach((item) => { item.classList.remove('is-selected'); item.setAttribute('aria-pressed', 'false'); });
-        button.classList.add('is-selected'); button.setAttribute('aria-pressed', 'true');
-        const selected = [...document.querySelectorAll('.quiz-options .is-selected')];
-        if (selected.length < 3) { result.textContent = `Te falta${3 - selected.length === 1 ? '' : 'n'} ${3 - selected.length} respuesta${3 - selected.length === 1 ? '' : 's'} para descubrir tu ruta.`; return; }
-        const tally = selected.reduce((score, item) => ({ ...score, [item.dataset.route]: (score[item.dataset.route] || 0) + 1 }), {});
-        const route = Object.keys(tally).reduce((best, key) => tally[key] > tally[best] ? key : best, 'codigo');
-        result.textContent = `TU RUTA: ${labels[route]}`;
-      }));
     </script>
   </body>
 </html>

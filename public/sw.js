@@ -1,4 +1,4 @@
-const CACHE_NAME = 'rumbo-ti-v116';
+const CACHE_NAME = 'rumbo-ti-v158';
 const APP_SHELL = ['/', '/manifest.webmanifest', '/icons/icon.svg', '/logo-utom-blanco.png', '/linces-ti.png', '/estudiante-utom.png', '/estudiante-hero.png'];
 
 self.addEventListener('install', (event) => {
