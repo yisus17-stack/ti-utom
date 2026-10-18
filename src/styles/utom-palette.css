@@ -1,0 +1,13 @@
+/* Paleta del lince UTOM: guinda, crema, blanco y dorado. */
+.split-hero { background:#fff; }
+.split-copy h1 span { color:#8c1748; }
+.split-copy .micro-label { color:#8c1748; }
+.split-copy .button-light { background:#8c1748; box-shadow:0 5px 0 rgba(77,19,45,.25); }
+.split-copy .button-light:hover { background:#641033; }
+.hero-mascot-wrap::before { width:min(92%,610px); height:88%; background:#f7ecdf; border:3px solid #8c1748; border-radius:50%; box-shadow:10px 11px 0 #8c1748; }
+.hero-mascot { width:min(86%,520px); max-height:620px; }
+.mascot-label { background:#8c1748; box-shadow:5px 5px 0 #e3ad3d; }
+.mascot-label span,.mascot-spark { color:#e3ad3d; }
+.sticker-one { background:#f7ecdf; border-color:#8c1748; box-shadow:5px 5px 0 #8c1748; }.sticker-one b { color:#8c1748; }
+.sticker-two { background:#8c1748; border-color:#8c1748; box-shadow:5px 5px 0 #4d132d; }.sticker-two b { color:#f7d36a; }
+.paper-strip b { color:#8c1748; }

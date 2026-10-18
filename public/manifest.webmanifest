@@ -1,0 +1,13 @@
+{
+  "name": "Rumbo TI · UTOM",
+  "short_name": "Rumbo TI",
+  "description": "Guía para descubrir la Ingeniería en Tecnologías de la Información e Innovación Digital de la UTOM.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f7f4",
+  "theme_color": "#7b153b",
+  "lang": "es-MX",
+  "icons": [
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,5 @@
+.hero-ribbon { position:absolute; z-index:0; width:min(62vw,680px); height:min(62vw,680px); right:19%; top:5%; overflow:visible; pointer-events:none; opacity:.9; }
+.hero-ribbon path { fill:none; stroke:#e3ad3d; stroke-width:21; stroke-linecap:round; stroke-linejoin:round; }
+.split-copy,.hero-mascot-wrap { position:relative; z-index:1; }
+@media (max-width:900px) { .hero-ribbon { width:650px; height:650px; right:-12%; top:43%; opacity:.5; } }
+@media (max-width:560px) { .hero-ribbon { width:510px; height:510px; right:-30%; top:46%; stroke-width:18; } }

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <rect width="192" height="192" rx="42" fill="#7b153b"/>
+  <path d="M35 56h20v80H35zm31 0h20v80H66zm31 0h20v80H97zm31 0h20v80h-20z" fill="#0ba88f"/>
+  <path d="M35 56h113v15H35z" fill="#f5ad42"/>
+  <text x="96" y="162" text-anchor="middle" fill="#fff" font-family="Arial" font-size="16" font-weight="700">TI · UTOM</text>
+</svg>

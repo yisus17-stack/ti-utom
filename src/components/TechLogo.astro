@@ -1,0 +1,17 @@
+---
+type Kind = 'html' | 'css' | 'js' | 'python' | 'sql' | 'git' | 'ai' | 'cisco' | 'cpp';
+interface Props { kind: Kind; }
+const { kind } = Astro.props;
+const labels: Record<Kind, string> = { html:'HTML5', css:'CSS3', js:'JavaScript', python:'Python', sql:'SQL', git:'Git', ai:'IA', cisco:'Cisco', cpp:'C++' };
+---
+<span class={`tech-logo tech-logo--${kind}`} role="img" aria-label={labels[kind]}>
+  {kind === 'html' && <svg viewBox="0 0 452 520" aria-hidden="true"><path fill="#e34f26" d="M41 460 0 0h451l-41 460-185 52"/><path fill="#ef652a" d="m226 472 149-41 35-394H226"/><path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"/></svg>}
+  {kind === 'css' && <svg viewBox="0 0 452 520" aria-hidden="true"><path fill="#264de4" d="M41 460 0 0h451l-41 460-185 52"/><path fill="#2965f1" d="m226 472 149-41 35-394H226"/><path fill="#fff" d="m226 361-64-17-4-45h-56l7 89 117 32zm0-211v56h136l5-56z"/></svg>}
+  {kind === 'js' && <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" fill="#f7df1e"/><text x="17" y="82" font-size="58" font-family="Arial" font-weight="700">JS</text></svg>}
+  {kind === 'python' && <svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#3776ab" d="M50 9c-20 0-19 9-19 9v10h20v3H23S9 30 9 50s12 19 12 19h8V57s0-12 12-12h20s11 0 11-11V20S72 9 50 9M39 17a4 4 0 1 1 0 8 4 4 0 0 1 0-8"/><path fill="#ffd343" d="M50 91c20 0 19-9 19-9V72H49v-3h28s14 1 14-19-12-19-12-19h-8v12s0 12-12 12H39s-11 0-11 11v14s0 11 22 11m11-8a4 4 0 1 1 0-8 4 4 0 0 1 0 8"/></svg>}
+  {kind === 'sql' && <svg viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="50" cy="18" rx="32" ry="12" fill="#00a889"/><path fill="#00a889" d="M18 18v55c0 16 64 16 64 0V18c0 16-64 16-64 0"/><path d="M18 45c0 16 64 16 64 0M18 63c0 16 64 16 64 0" fill="none" stroke="#fff" stroke-width="4"/></svg>}
+  {kind === 'git' && <svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#f05133" d="M10 50 50 10l40 40-40 40z"/><path d="M35 35v30m0-15h25m0-15v30" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="35" cy="35" r="5" fill="#fff"/><circle cx="35" cy="65" r="5" fill="#fff"/><circle cx="60" cy="35" r="5" fill="#fff"/></svg>}
+  {kind === 'ai' && <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 9 60 39l30 11-30 11-10 30-10-30-30-11 30-11z" fill="#7a1b47"/><circle cx="50" cy="50" r="10" fill="#00a889"/></svg>}
+  {kind === 'cisco' && <svg viewBox="0 0 120 56" aria-hidden="true"><g fill="#1680ba"><path d="M8 7h5v18H8zm12-5h5v23h-5zm12 5h5v18h-5zm12-7h5v25h-5zm22 7h5v18h-5zm12-5h5v23h-5zm12 5h5v18h-5zm12-7h5v25h-5z"/><text x="5" y="52" font-size="23" font-family="Arial" font-weight="700">CISCO</text></g></svg>}
+  {kind === 'cpp' && <svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#649AD2" d="m50 3 42 24v46L50 97 8 73V27z"/><text x="21" y="62" font-size="32" font-family="Arial" font-weight="700" fill="#fff">C++</text></svg>}
+</span>

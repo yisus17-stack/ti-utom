@@ -1,0 +1,32 @@
+@"
+# Dependencias
+node_modules/
+
+# Archivos generados por Astro
+dist/
+.astro/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Despliegue
+.vercel/
+.netlify/
+"@ | Set-Content -Path .gitignore -Encoding utf8

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700;800&display=swap');
+
+/* Poster-style campaign layer inspired by editorial food/brand landing pages. */
+.topbar { background:#fffdf8; }
+.hero.poster-hero { position:relative; min-height:650px; grid-template-columns:1fr 1.05fr; background:#f5f0df; color:#11101b; padding:56px 7vw 70px; gap:4vw; isolation:isolate; }
+.poster-hero::before { content:""; position:absolute; inset:0; z-index:-2; background:linear-gradient(112deg,#ff5b27 0 26%,#f7ad13 26% 51%,#b6db24 51% 69%,#0b9c83 69% 100%); clip-path:polygon(0 0,100% 0,100% 68%,0 100%); }
+.poster-hero::after { content:""; position:absolute; inset:0; z-index:-1; background:#f5f0df; clip-path:polygon(0 68%,100% 48%,100% 100%,0 100%); }
+.poster-hero .micro-label { color:#fff; font-family:'Barlow Condensed',sans-serif; font-size:12px; letter-spacing:1.2px; text-shadow:0 1px 0 rgba(0,0,0,.18); }
+.poster-hero h1 { font-family:Anton,'Arial Narrow',sans-serif; font-size:clamp(64px,8.8vw,122px); font-weight:400; line-height:.84; letter-spacing:1px; color:#090915; margin:28px 0 24px; text-transform:uppercase; }
+.poster-hero h1 span { color:#fff; -webkit-text-stroke:1px rgba(0,0,0,.05); }
+.poster-hero .hero-copy > p { max-width:370px; color:#211d2b; font-size:13px; font-weight:500; line-height:1.45; }
+.poster-hero .hero-actions { margin-top:27px; }
+.poster-hero .button-light { background:#f44324; color:#fff; border-radius:30px; padding:14px 22px; text-transform:uppercase; font-family:'Barlow Condensed',sans-serif; font-size:14px; letter-spacing:.8px; box-shadow:0 5px 0 rgba(107,34,23,.2); }
+.poster-hero .button-light:hover { background:#ef3115; transform:translateY(-2px); }
+.poster-hero .dark-link { color:#10101b; font-family:'Barlow Condensed',sans-serif; text-transform:uppercase; font-size:13px; letter-spacing:.7px; }
+.poster-hero .dark-link .play { border-color:#10101b; }
+.hero-badge { display:flex; align-items:center; gap:11px; margin-top:32px; font:500 10px/1.1 'Barlow Condensed',sans-serif; text-transform:uppercase; color:#11101b; }
+.hero-badge > span { display:grid; place-items:center; width:43px; height:43px; border:2px solid #11101b; border-radius:50%; font:400 19px Anton; transform:rotate(-12deg); }
+.hero-badge b { font-size:17px; }
+.poster-visual { min-height:475px; background:transparent; overflow:visible; }
+.poster-visual .visual-top,.poster-visual .visual-bottom { color:#11101b; font-family:'Barlow Condensed',sans-serif; font-size:11px; font-weight:700; }
+.code-sheet { position:absolute; z-index:2; top:62px; left:3%; width:185px; height:206px; padding:20px; background:#fffdf8; box-shadow:8px 8px 0 rgba(28,26,29,.14); transform:rotate(-8deg); }
+.code-dots { display:block; color:#f44324; font-size:9px; letter-spacing:3px; margin-bottom:34px; }.code-sheet b { display:block; font:400 29px/.86 Anton; text-transform:uppercase; letter-spacing:.5px; }.code-sheet em { color:#f44324; font-style:normal; }.code-sheet small { position:absolute; right:16px; bottom:14px; font:500 9px 'DM Mono'; }
+.device-card { position:absolute; right:5%; top:39px; width:min(64%,360px); height:395px; padding:16px; background:#fffdf8; border:3px solid #11101b; border-radius:6px; transform:rotate(5deg); box-shadow:13px 14px 0 rgba(17,16,27,.18); }.device-header,.device-footer { display:flex; justify-content:space-between; font:600 10px 'Barlow Condensed'; text-transform:uppercase; letter-spacing:1px; }.device-screen { position:relative; height:290px; margin-top:16px; padding:28px 20px; overflow:hidden; background:#11101b; color:#f5f0df; }.device-screen span { color:#d5f15d; display:block; font:500 17px 'DM Mono'; }.device-screen strong { display:block; font:400 clamp(50px,7vw,82px)/.83 Anton; text-transform:uppercase; margin-top:13px; color:#f3a2b9; }.device-screen i { display:block; color:#ffb218; font:500 18px 'DM Mono'; font-style:normal; }.device-orb { position:absolute; width:150px; height:150px; right:-17px; bottom:-26px; background:#0ba88f; border-radius:50%; box-shadow:0 0 0 17px rgba(11,168,143,.2); }.device-footer { align-items:end; margin-top:12px; }.device-footer b { font:400 29px Anton; color:#f44324; }
+.poster-visual .visual-sticker { z-index:4; border:2px solid #11101b; box-shadow:6px 6px 0 #11101b; font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:700; }.poster-visual .sticker-a { top:270px; left:-5%; background:#d5f15d; transform:rotate(-8deg); }.poster-visual .sticker-b { right:0; bottom:95px; background:#f44324; color:#fff; transform:rotate(7deg); }.poster-visual .sticker-b b { font-family:Anton; font-weight:400; font-size:34px; }.poster-visual .visual-bottom { bottom:1px; }
+.paper-strip { position:relative; z-index:3; display:flex; justify-content:center; align-items:center; gap:24px; margin:-36px auto 0; width:min(880px,88%); padding:21px 28px; background:#fffdf8; color:#11101b; box-shadow:0 8px 0 rgba(29,27,30,.15); clip-path:polygon(1% 5%,99% 0,100% 90%,3% 100%,0 18%); font:700 14px 'Barlow Condensed',sans-serif; text-transform:uppercase; letter-spacing:1px; }.paper-strip b { color:#f44324; font-size:20px; }
+.marquee { display:none; }
+.explore { background:#f5f0df; padding-top:100px; }
+.explore .section-tag,.proof .section-tag { font-family:'Barlow Condensed',sans-serif; font-size:13px; }
+.explore h2,.map-section h2,.proof h2,.final-cta h2 { font-family:Anton,'Arial Narrow',sans-serif; font-weight:400; text-transform:uppercase; letter-spacing:1px; }
+.discipline-card { border:2px solid #11101b; box-shadow:7px 7px 0 #11101b; }.discipline-card h3 { font-family:Anton,'Arial Narrow',sans-serif; font-weight:400; text-transform:uppercase; letter-spacing:1px; }.discipline-card p { font-family:'Barlow Condensed',sans-serif; font-size:15px; }
+.map-section { background:#11101b; }.semester { border:2px solid #11101b; }.semester-head span,.semester li,.track-footer { font-family:'Barlow Condensed',sans-serif; }.semester-head b { font-family:Anton; font-weight:400; }
+.final-cta { background:#f3a2b9; }.final-cta h2 { font-size:clamp(58px,7vw,100px); }.final-cta .button-dark { border-radius:0; font-family:'Barlow Condensed',sans-serif; font-size:15px; text-transform:uppercase; }.final-logo img { filter:brightness(0); opacity:.72; }
+
+@media (max-width:900px) { .hero.poster-hero { grid-template-columns:1fr; padding-top:58px; }.poster-visual { min-height:500px; max-width:640px; width:100%; margin:auto; }.paper-strip { margin-top:-24px; }.device-card { right:11%; } }
+@media (max-width:560px) { .hero.poster-hero { padding-top:46px; min-height:780px; }.poster-hero h1 { font-size:70px; }.poster-hero .hero-actions { gap:16px; }.poster-visual { min-height:370px; }.device-card { right:2%; width:74%; height:315px; }.device-screen { height:216px; }.device-screen strong { font-size:54px; }.code-sheet { left:0; top:36px; width:137px; height:154px; padding:14px; }.code-sheet b { font-size:21px; }.code-sheet .code-dots { margin-bottom:20px; }.poster-visual .sticker-a { top:218px; left:1%; }.poster-visual .sticker-b { bottom:56px; right:2%; }.paper-strip { gap:10px; padding:16px 11px; font-size:11px; }.paper-strip span:nth-of-type(2) { display:none; }.paper-strip b { font-size:15px; }.final-logo img { width:min(72vw,300px); } }

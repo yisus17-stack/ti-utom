@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.split-copy h1 { font-family:'Bebas Neue','Arial Narrow',sans-serif; font-size:clamp(84px,10vw,146px); line-height:.74; letter-spacing:2px; font-weight:400; }
+.split-copy h1 span { display:inline-block; transform:translateY(-.06em); color:#8c1748; text-shadow:3px 3px 0 rgba(227,173,61,.16); }
+@media (max-width:560px) { .split-copy h1 { font-size:84px; letter-spacing:1px; } }
