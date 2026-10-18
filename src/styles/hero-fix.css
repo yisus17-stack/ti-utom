@@ -428,6 +428,23 @@ body { background:var(--utm-paper); color:#160f17; }
 /* Titular con más aire entre sus renglones. */
 .reference-hero h1 { line-height:.84; }
 
+@media (max-width:640px) {
+  .reference-hero-student { bottom:44px; }
+}
+
+@media (max-width:380px) {
+  .reference-hero-student { bottom:38px; }
+}
+
+@media (max-width:640px) {
+  .reference-stage { height:340px; overflow:visible; }
+  .reference-hero-student { bottom:clamp(54px, calc(110px - 13vw), 70px); }
+  .reference-hero h1 {
+    font-size:clamp(70px, 19vw, 94px);
+    line-height:.80;
+  }
+}
+
 /* Mapa curricular legible en teléfono. */
 @media (max-width:640px) {
   .semester-track { gap:20px; }
