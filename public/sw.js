@@ -1,5 +1,5 @@
-const CACHE_NAME = 'rumbo-ti-v158';
-const APP_SHELL = ['/', '/manifest.webmanifest', '/icons/icon.svg', '/logo-utom-blanco.png', '/linces-ti.png', '/estudiante-utom.png', '/estudiante-hero.png'];
+const CACHE_NAME = 'rumbo-ti-v164';
+const APP_SHELL = ['/', '/manifest.webmanifest', '/icons/icon-192.png', '/icons/icon-square-180.png', '/icons/icon-square-192.png', '/icons/icon-square-512.png', '/logo-utom-blanco.png', '/linces-ti.png', '/estudiante-utom.png', '/estudiante-hero.png'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)));
